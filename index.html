@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    padding: 0px;
+    background-color:aquamarine;
+}
+
+.hiden {
+    transform: translate(0px, 30px);
+}
+
+.container {
+    width: 250px;
+    height: 60px;
+    background-color: beige;
+    border: 1px solid rgb(200, 200, 200);
+    transition: all 1s ease-in-out;
+    transform: translate(0px, 30px);
+    color: rgb(31, 0, 0);
+    text-align: end;
+    padding: 5px;
+    cursor: grab;
+}
+
+.container:hover {
+    transform: translate(0px, 0px);
+    background-color: rgb(149, 218, 160);
+    opacity: 0.682;
+    color: rgb(252, 0, 50);
+    font-size: larger;
+}
+
+p {
+    margin-left: 10px;
+}
+
+.frame {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    
+    
+    border: 1px solid rgb(200, 200, 200);
+    margin-top: 30px;
+    animation: right 10s ease-in-out 0s infinite both;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+@keyframes right {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    
+    50% {
+        transform: translate(90vw, 0px);
+    }
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p class="hiden">Lorem, ipsum dolor.</p>
+    <div class="container">Touch</div>
+    <p>Lorem ipsum dolor</p> -->
+    <div class="frame">
+        <img src="13.jpg" >
+    </div>
+    
+</body>
+</html>
