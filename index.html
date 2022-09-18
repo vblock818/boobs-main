@@ -14,16 +14,18 @@
 body {
     margin-top: 100px;
     padding: 0px;
-    background-color:aquamarine;
+    background-color:rgb(250,200,150);
 }
-
 img {
-    height: 300px;
-    border-radius: 100px;
+    height: 200px;
+    border-radius: 70px;
     margin: 10px;
 }
 .frame {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     animation: right 19s ease-in-out 0s infinite both;
 }
 
@@ -34,11 +36,11 @@ img {
 
 @keyframes right {
     0%, 100% {
-        transform: translate(-350px, 0px);
+        transform: translate(-100vw, 0vw);
     }
     
     50% {
-        transform: translate(102vw, 0px);
+        transform: translate(100vw, 0vw);
     }
 }
 
